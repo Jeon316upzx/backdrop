@@ -4,6 +4,26 @@
 
 ## Description:
 
+## LIVE LINK :https://backdrop-testn.herokuapp.com/
+
+## MUTATIONS TO TEST WITH
+
+## ENTER ANY URL
+
+mutation shortenURL {
+shortenURL(input: { full_url: "https://twitter.com/old_mustang" }) {
+id
+full_url
+hashed_url
+}
+}
+
+mutation findUrl {
+findUrl(input: { hashed_url: "https://example.com/4RHudQ" }) {
+full_url
+}
+}
+
 This project is a demostration of my backend skillset in accordance with the
 instructions/guide given for the project. It is a mini url shortener with the following queries:
 
@@ -52,8 +72,3 @@ To get started :
 3. Run `yarn test` or `npm run test` to run tests
 
 4. Run `yarn start` or `npm start` to run the project.
-
-ENV REQUIREMENTS
-
-SERVER_PORT=4000
-MONGO_URL=mongodb+srv://mazi:maziuwa@cluster0.28o1r.mongodb.net/backdrop?retryWrites=true&w=majority
