@@ -1,13 +1,13 @@
 {
   "name": "mainbackdrop",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend test for backdrop",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "mocha --timeout 20000 test/*.test.js"
   },
-  "keywords": [],
+  "keywords": ["backend","backdrop"],
   "author": "",
   "license": "ISC",
   "dependencies": {
