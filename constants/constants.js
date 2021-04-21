@@ -1,0 +1,12 @@
+const HTTP = {
+  OK: 200,
+  BAD_REQUEST: 400,
+  SERVER_ERROR: 500,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  CREATED: 201,
+  MISSING_PARAMS: 422,
+  INVALID_REQUEST: 401,
+};
+
+module.exports = HTTP;
