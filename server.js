@@ -23,7 +23,7 @@ const server = new ApolloServer({
   },
 });
 
-server.listen({ port: configurations.SERVER_PORT || 4000 }).then(({ url }) => {
+server.listen(configurations.SERVER_PORT || 4000).then(({ url }) => {
   logger.info(`App is listening at ${url} 😋 `);
 });
 
